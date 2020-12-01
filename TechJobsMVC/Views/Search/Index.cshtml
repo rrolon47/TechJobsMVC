@@ -34,16 +34,18 @@
     else
     {
         <h1>Search Results</h1>
-        @foreach (var job in ViewBag.jobs)
-        {            
-            <table class="job-listing">
+        <table class="job-listing">
+            @foreach (var job in ViewBag.jobs)
+            {
+
                 <tr>
                     <td>
                         @job.ToString()
                     </td>
                 </tr>
-            </table>
-        }
+
+            }
+        </table>
     }
 
 
