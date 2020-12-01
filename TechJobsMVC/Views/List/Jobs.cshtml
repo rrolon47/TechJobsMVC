@@ -4,6 +4,20 @@
 
     @{
         //TODO #1: Use a loop to display job results in a table.
+        //convert the loop from list/index to only one cloumn that corresponds with selected qurry
+        
+        <table class="job-listing">
+         
+             @foreach (var job in ViewBag.jobs)
+              {
+                   <tr>
+                       <td>
+                           @job.ToString()
+                       </td>
+                   </tr>
+              }
+            
+        </table>
     }
 
 

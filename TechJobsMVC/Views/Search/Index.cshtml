@@ -27,7 +27,37 @@
     <hr />
 
     @{
-        //TODO #4: Loop over the search results to display all job fields.
+//TODO #4: Loop over the search results to display all job fields.
+/*
+convert this looping to loop over search values 
+<table class="centeredTable">
+<tr>
+@foreach(var column in ViewBag.columns)
+{
+    <th>@column.Value</th>
+}
+</tr>
+<tr>
+@{
+    //TODO #2: Complete the View Jobs By Category Table
+}
+
+<td></td> @* Feel free to remove or modify this element if necessary. *@
+@foreach (var category in ViewBag.tableChoices)
+{
+    <td>
+        <ul>
+            @foreach (var item in category.Value)
+            {
+                <li>
+                    <a asp-controller="List" asp-action="Jobs" asp-route-column="@category.Key" asp-route-value="@item">@item</a>
+                </li>
+            }
+        </ul>
+    </td>
+}
+</tr>
+</table>*/
     }
 
 </div>
