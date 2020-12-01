@@ -11,7 +11,6 @@ namespace TechJobsMVC.Controllers
 {
     public class HomeController : Controller
     {
-        //home page
         public IActionResult Index()
         {
             Dictionary<string, string> actionChoices = new Dictionary<string, string>();

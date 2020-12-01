@@ -40,7 +40,6 @@ namespace TechJobsMVC.Controllers
             return View();
         }
 
-        // list jobs by column and value
         public IActionResult Jobs(string column, string value)
         {
             List<Job> jobs;
